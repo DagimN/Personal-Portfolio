@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        PERSONAL PORTFOLIO
+    </header>
+    <div class="content">
+        <img src="images/bulb_ladder2.jpg" class="front-img">
+        <h1> Dagmawi Nebiat </h1>
+        <h2> Inspire to Aspire. </h2>
+        <button class="about" onclick="AboutPressed()"> About </button>
+        <button class="contact" onclick="ContactPressed()"> Contact </button>
+        
+    </div>
+
+    <div class="about-div">
+        <div class="about-me">
+            <h2> About Me</h2>
+            <div class="intro-display" id="intro-id">
+                <h2 id="intro-heading">
+                    Introduction
+                </h2>
+                <p id="intro-para">
+                    My name is Dagmawi Nebiat and I am a 20 year old student currently learning at
+                    Adama Science and Technology University. I have progressed through the curriculum for three 
+                    years and counting. I am working on my bachelors degree on Computer Science and Programming. 
+                    In addition to this, I can also provide freelance services depending on the job.   
+                </p>
+            </div>
+            <div class="vision-display" id="vision-id">
+                <h2 id="vision-heading">
+                    Vision
+                </h2>
+                <p id="vision-para">
+                    Many programmers have a common vision of being the best in their skills and prove that they have what it takes to 
+                    achieve the best and "make the world a better place". Although it is quite similar in some aspects to what I am trying 
+                    to achieve, it is not quite the same. My vision is to have a good knowledge base in each aspects of the profession 
+                    that interests and as a by-product give back to the community as beneficial as possible. Some may cheer, some may ridicule 
+                    but that will not halt me from reaching the next level whatever it is. 
+                </p>
+            </div>
+            <div class="passion-display" id="passion-id">
+                <h2 id="passion-heading">
+                    Passion
+                </h2>
+                <p id="passion-para">
+                    Although programming is considered as passion for some, including me, it is not the only one. I also have a passion for
+                    entertainment, art and music. They are intertwined with each other, even with programming. In my opinion it is best to include
+                    other skills and hobbies and mixing it with one another. Here is an analogy to best describe my intention on this topic. "Better to be
+                    like water rather than a rock. Even though a rock is strong with its conviction, it's not easily stirred towards new prospects. Unlike the former
+                    , water is flexible and flows easily making it easy to take new stuff."  - General Iroh
+                </p>
+            </div>
+            <img src="images/monitor.png" id="monitor-id" class="monitor" onclick="IntroClicked()">
+            <h4 class="intro">Introduction</h4>
+            <img src="images/watch.png" id="watch-id" class="watch" onclick="VisionClicked()">
+            <h4 class="vision">Vision</h4>
+            <img src="images/joystick.png" id="joystick-id" class="joystick" onclick="PassionClicked()">
+            <h4 class="passion">Passion</h4>
+        </div>
+        <div class="lang-icons">
+            <img src="images/Html.png" class="html-icon">
+            <img src="images/Css.png" class="css-icon">
+            <img src="images/javascript.jpg" class="js-icon">
+            <img src="images/nodejs.png" class="nodejs-icon">
+            <img src="images/c.png" class="c-icon">
+            <img src="images/c++.png" class="cpp-icon">
+            <img src="images/csharp.jpg" class="csharp-icon">
+            <img src="images/java.jpg" class="java-icon">
+            <img src="images/dart.png" class="dart-icon">
+        </div>
+        <div class="skill-div">
+            <h3>Skill Sets</h3>
+            <p class="skill-descrip">You want to get the job done, well you came to the right place. I currently have a set of skills that are up to date with the 
+                current technologies and, also have some taste to old school programming insuring that all products that are produced are have both
+                old and new flavors. Those skill sets include HTML5, CSS3, Javascript, Node.js, C, C++, C#, Java, Dart. 
+            </p> 
+        </div>
+    </div>
+
+    <div class="contact-div"  onmouseleave="Disappear()">
+        <footer id="footer">
+            CONTACT ME
+            <button class="gmail" onclick="GmailClicked()"><img class="gmail-img" src="images/gmail.png"></button>
+            <button class="telegram" onclick="TelegramClicked()"><img class="telegram-img" src="images/telegram.png"></button>
+            <button class="github" onclick="GithubClicked()"><img class="github-img" src="images/github.png"></button>
+        </footer>
+    </div>
+    <script src="index.js" type="text/javascript"> </script>
+</body>
+</html>
